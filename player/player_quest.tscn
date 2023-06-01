@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://seqlss48jtrt"]
+
+[ext_resource type="Script" path="res://code/player_controler.gd" id="1_ub1qa"]
+
+[node name="player_quest" type="Node3D"]
+script = ExtResource("1_ub1qa")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+fov = 124.7
+
+[node name="left_hand" type="XRController3D" parent="XROrigin3D"]
+tracker = &"left_hand"
+
+[node name="right_hand" type="XRController3D" parent="XROrigin3D"]
+tracker = &"right_hand"
